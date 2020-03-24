@@ -31,9 +31,10 @@ M569 P3 S0                                         ; Drive Extruder goes backwar
 
 M350 X16 Y16 Z16 E16 I1                            ; Configure microstepping with interpolation
 M92 X200 Y200 Z800 E415                            ; Set steps per mm.  Initially E405.18 or 413-415, Ballscrew 200*16/4 = 800 (200 steps, 16 microstepping, 4 pitch)
-M566 X1200 Y1200 Z24 E600                          ; Set maximum instantaneous speed changes (Jerk) (mm/min) M566 X600 Y600 Z24 E300  
-M203 X20000 Y20000 Z600 E5000           ;REVISAR           ; Set maximum speeds (mm/min) 
-M201 X3000 Y3000 Z100 E2000		;REVISAR	   ; Set accelerations (mm/s^2) (initially E2000) 
+M201 X3000 Y3000 Z100 E5000		           ; Set accelerations (mm/s^2)
+M203 X20000 Y20000 Z600 E8000                      ; Set maximum speeds (mm/min)   
+M566 X800 Y800 Z24 E300                            ; Set maximum instantaneous speed changes (Jerk) (mm/min)
+
 M906 X1600 Y1600 Z1600 E1600 I30                   ; Set motor currents (mA) and motor idle factor in per cent
 M84 S30                                            ; Set idle timeout
 
