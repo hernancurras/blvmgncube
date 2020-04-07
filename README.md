@@ -22,4 +22,7 @@ The autolevel, initially was using IR sensor, on duet probe, but now is configur
 Since the DUETX5 is installed, the PWM servo of the BLTouch was configured there.
 Using the default piece of the project to hold the sensor, with X28.5 Y-5 offsets. Using 2 M3 nuts (2.39mm each), without washers as spacers, the Z offset is ˜2.3mm
 
+![alt text](https://instagram.faep8-2.fna.fbcdn.net/v/t51.2885-15/e35/71184883_2726075894151268_111384618282760399_n.jpg?_nc_ht=instagram.faep8-2.fna.fbcdn.net&_nc_cat=104&_nc_ohc=rqMEmWj2884AX-d0xcP&oh=fa0b87676c06adf0bc90b0c4915d4cf9&oe=5EB54899 "Blv Mgn Extruder")
+
+![alt text](https://instagram.faep8-2.fna.fbcdn.net/v/t51.2885-15/e35/75518386_2548235835446780_9131160443129393729_n.jpg?_nc_ht=instagram.faep8-2.fna.fbcdn.net&_nc_cat=108&_nc_ohc=z04-F6lrMlEAX90RjaZ&oh=e075593c6e0dbc62d0c772a286e888aa&oe=5EB4947A "Blv Mgn Frame")
 
