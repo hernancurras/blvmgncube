@@ -55,20 +55,20 @@ M574 X1 Y2 S1                                      ; Set active high endstops ed
 M307 H7 A-1 C-1 D-1                                ; Disable the 7th Heater to free up PWM channel 5 on the Duex board.
 M574 Z1 S2                                         ; Set endstops controlled by probe
 M558 P5 X0 Y0 Z1 H5 F200 T6000		           ; Set Z probe. Set Z probe type/mode 5 BLtouch.
-G31 P500 X28.5 Y-5 Z1.65                           ; Set Z probe trigger value, offset and trigger height adjusted Bltouch G31 X28.5 Y-5 (using 2.39mm bolts, no washers) Cuanto mas alta es Z, mas acerca a la cama.
+G31 P500 X28.5 Y-5 Z2.3                           ; Set Z probe trigger value, Bltouch G31 X28.5 Y-5 (using 2.39mm bolts, no washers) Cuanto mas alta es Z, mas acerca a la cama.
 M557 X30:300 Y30:300 S100			   ; Define mesh grid
 
 ; Heater H0 -> Heatbed
-M307 H0 A99.1 C453.2 D2.2 B0			   ; Set PID for heated bed values
-M305 P0 T100000 B3950 C0 R4700                     ; Set thermistor + ADC parameters for heater 0
-M143 H0 S100                                       ; Set temperature limit for heater 0 to 100C
 M307 H0 A224.4 C456.9 D8.2 V24.0 B0                ; Set bed to use PID mode
+M305 P0 T100000 B3950 C0 R4700                     ; Set thermistor + ADC parameters for heater 0
+M143 H0 S120                                       ; Set temperature limit for heater 0 to 120C
+
 
 ; Heater H1 -> E3Dv6
-M307 H1 A372.3 C109.6 D4.6 B0			   ; Set PID for hotend values
+M307 H1 A293.4 C80.9 D7.1 V24.0 B0	           ; Set E3Dv6 to use PID mode     
 M305 P1 T100000 B3950 C0 R4700                     ; Set thermistor + ADC parameters for heater 1
 M143 H1 S260                                       ; Set temperature limit for heater 1 to 260C
-M307 H1 A293.4 C80.9 D7.1 V24.0 B0	           ; Set E3Dv6 to use PID mode                            
+                       
 
 ; Fans
 M106 P0 S0 I0 F500 H-1                             ; Set fan 0 value, PWM signal inversion and frequency. Thermostatic control is turned off
