@@ -2,6 +2,7 @@
 Duet 2 Wifi Files for BLV MGN Cube reprap 3d printer, with Duetx5 extension.
 
 ../Designed-Upgrades are all the custom made parts for the 3Z axis project + 1204 ballscreew
+
 ../Thingiverse-addons are the optional parts downloaded from thingiverse to complete the project. 
 
 This project attempt to version the DUET 2 wifi config files for this project, attempted to be shared, documented & backuped.
