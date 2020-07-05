@@ -31,22 +31,38 @@ Using the default piece of the project to hold the sensor, with X28.5 Y-5 offset
 ![alt text](https://instagram.faep8-2.fna.fbcdn.net/v/t51.2885-15/e35/75518386_2548235835446780_9131160443129393729_n.jpg?_nc_ht=instagram.faep8-2.fna.fbcdn.net&_nc_cat=108&_nc_ohc=z04-F6lrMlEAX90RjaZ&oh=e075593c6e0dbc62d0c772a286e888aa&oe=5EB4947A "Blv Mgn Frame")
 
 ; Drives Direction.
+
 M569 P0 S1                                     ; physical drive 0 goes forwards
+
 M569 P1 S1                                     ; physical drive 1 goes forwards
+
 M569 P2 S0                                     ; physical drive 2 goes backwards
+
 M569 P3 S0                                     ; physical drive 3 goes backwards
 
 ; Default Motion Description:
+
 M584 X0 Y1 Z2 E3                               ; set drive mapping
+
 M350 X16 Y16 Z16 E16 I1                        ; configure microstepping with interpolation
+
 M92 X200.00 Y200.00 Z800.00 E415.00            ; Set steps per mm.  Initially E405.18 or 413-415, Ballscrew 200*16/4 = 800 (200 steps, 
+
 M566 X800 Y800 Z24 E300    					               ; set maximum instantaneous speed changes (mm/min)
+
 M203 X20000 Y20000 Z600 E8000				              ; set maximum speeds (mm/min)
+
 M201 X3000.00 Y3000.00 Z100.00 E5000.00        ; set accelerations (mm/s^2)
+
 M906 X1600 Y1600 Z1600 E1600 I30               ; set motor currents (mA) and motor idle factor in per cent
+
 M84 S30                                        ; Set idle timeout
 
+
 ; Heaters PID
+
 M307 H0 A224.4 C456.9 D8.2 V24.0 B0 S1.00      ; disable bang-bang mode for the bed heater and set PWM limit
+
 M307 H1 A293.4 C80.9 D7.1 V24.0 B0 B0 S1.00    ; disable bang-bang mode for heater  and set PWM limit
+
 
