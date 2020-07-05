@@ -33,7 +33,7 @@ Using the default piece of the project to hold the sensor, with X28.5 Y-5 offset
 
 # Default BLV MGN Motion Setup
 
-*Drives Direction*
+**Drives Direction**
 
 M569 P0 S1                                     ; physical drive 0 goes forwards (X1)
 
@@ -43,7 +43,7 @@ M569 P2 S0                                     ; physical drive 2 goes backwards
 
 M569 P3 S0                                     ; physical drive 3 goes backwards (E0)
 
-*Default Motion Description:*
+**Default Motion Description:**
 
 M584 X0 Y1 Z2 E3                               ; set drive mapping
 
@@ -62,7 +62,7 @@ M906 X1600 Y1600 Z1600 E1600 I30               ; set motor currents (mA) and mot
 M84 S30                                        ; Set idle timeout
 
 
-*Heaters PID*
+**Heaters PID**
 
 M307 H0 A224.4 C456.9 D8.2 V24.0 B0 S1.00      ; disable bang-bang mode for the bed heater and set PWM limit
 
