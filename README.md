@@ -30,15 +30,18 @@ Using the default piece of the project to hold the sensor, with X28.5 Y-5 offset
 
 ![alt text](https://instagram.faep8-2.fna.fbcdn.net/v/t51.2885-15/e35/75518386_2548235835446780_9131160443129393729_n.jpg?_nc_ht=instagram.faep8-2.fna.fbcdn.net&_nc_cat=108&_nc_ohc=z04-F6lrMlEAX90RjaZ&oh=e075593c6e0dbc62d0c772a286e888aa&oe=5EB4947A "Blv Mgn Frame")
 
+
+# Default BLV MGN Motion Setup
+
 ; Drives Direction.
 
-M569 P0 S1                                     ; physical drive 0 goes forwards
+M569 P0 S1                                     ; physical drive 0 goes forwards (X1)
 
-M569 P1 S1                                     ; physical drive 1 goes forwards
+M569 P1 S1                                     ; physical drive 1 goes forwards (Y1)
 
-M569 P2 S0                                     ; physical drive 2 goes backwards
+M569 P2 S0                                     ; physical drive 2 goes backwards (Z1-Z2)
 
-M569 P3 S0                                     ; physical drive 3 goes backwards
+M569 P3 S0                                     ; physical drive 3 goes backwards (E0)
 
 ; Default Motion Description:
 
