@@ -1,6 +1,8 @@
 # blvmgncube
 Duet 2 Wifi Files for BLV MGN Cube reprap 3d printer, with Duetx5 extension.
 
+The Master Branch, with remain with RepRapFirmware 3.X, while the old config files will be deprecated under RepRapFirmware2.X Branch. 
+
 ../Designed-Upgrades are all the custom made parts for the 3Z axis project + 1204 ballscreew
 
 ../Thingiverse-addons are the optional parts downloaded from thingiverse to complete the project. 
