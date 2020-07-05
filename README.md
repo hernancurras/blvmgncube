@@ -30,9 +30,6 @@ Using the default piece of the project to hold the sensor, with X28.5 Y-5 offset
 
 ![alt text](https://instagram.faep8-2.fna.fbcdn.net/v/t51.2885-15/e35/75518386_2548235835446780_9131160443129393729_n.jpg?_nc_ht=instagram.faep8-2.fna.fbcdn.net&_nc_cat=108&_nc_ohc=z04-F6lrMlEAX90RjaZ&oh=e075593c6e0dbc62d0c772a286e888aa&oe=5EB4947A "Blv Mgn Frame")
 
-
-Default Motion Description:
-
 ; Drives Direction.
 M569 P0 S1                                     ; physical drive 0 goes forwards
 M569 P1 S1                                     ; physical drive 1 goes forwards
