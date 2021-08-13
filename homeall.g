@@ -11,7 +11,7 @@ G1 X5 Y-5 F6000        ; go back a few mm
 G1 H1 X-348 F360       ; move slowly to X axis endstop once more (second pass)
 G1 H1 Y326             ; then move slowly to Y axis endstop
 G90                    ; absolute positioning
-G1 X150 Y150 F6000 	   ; Probe Z on the center of the bed
+G1 X150 Y100 F6000 	   ; Probe Z on the center of the bed
 G30                    ; home Z by probing the bed
 
 ; Uncomment the following lines to lift Z after probing

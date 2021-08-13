@@ -10,7 +10,7 @@ M550 P"BLV MGN Cube"                           ; set printer name
 M669 K1                                        ; select CoreXY mode
 
 ; Network
-M551 P"admin"                               ; set password
+M551 P""                                       ; set password
 M552 S1                                        ; enable network
 M586 P0 S1                                     ; enable HTTP
 M586 P1 S1                                     ; enable FTP
@@ -24,9 +24,9 @@ M569 P3 S0                                     ; physical drive 3 goes backwards
 M584 X0 Y1 Z2 E3                               ; set drive mapping
 M350 X16 Y16 Z16 E16 I1                        ; configure microstepping with interpolation
 M92 X200.00 Y200.00 Z800.00 E415.00            ; Set steps per mm.  Initially E405.18 or 413-415, Ballscrew 200*16/4 = 800 (200 steps, 
-M566 X800 Y800 Z24 E300    					   ; set maximum instantaneous speed changes (mm/min)
-M203 X20000 Y20000 Z600 E8000				   ; set maximum speeds (mm/min)
-M201 X3000.00 Y3000.00 Z100.00 E5000.00        ; set accelerations (mm/s^2)
+M566 X600 Y600 Z24 E300    					   ; set maximum instantaneous speed changes (mm/min)
+M203 X12000 Y12000 Z600 E2500				   ; set maximum speeds (mm/min)
+M201 X3000.00 Y3000.00 Z100.00 E3000.00        ; set accelerations (mm/s^2)
 M906 X1600 Y1600 Z1600 E1600 I30               ; set motor currents (mA) and motor idle factor in per cent
 M84 S30                                        ; Set idle timeout
 
@@ -42,8 +42,8 @@ M574 Z1 S2                                     ; configure Z-probe endstop for l
 ; Z-Probe
 M950 S0 C"duex.pwm5"                           ; create servo pin 0 for BLTouch
 M558 P9 C"zprobe.in+zprobe.mod" H5 F120 T6000  ; set Z probe type to bltouch and the dive height + speeds
-G31 P500 X28.5 Y-5 Z1.9                        ; set Z probe trigger value, offset and trigger height
-M557 X25:300 Y25:300 S80                        ; define mesh grid
+G31 P500 X0 Y64 Z1.6					       ; set Z probe trigger value, offset and trigger height
+M557 X25:300 Y25:300 S80                       ; define mesh grid
 
 ; Heaters
 M308 S0 P"bedtemp" Y"thermistor" T100000 B4138 ; configure sensor 0 as thermistor on pin bedtemp
