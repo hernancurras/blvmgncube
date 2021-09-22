@@ -21,7 +21,12 @@ M569 P0 S1                                     ; physical drive 0 goes forwards
 M569 P1 S1                                     ; physical drive 1 goes forwards
 M569 P2 S0                                     ; physical drive 2 goes backwards
 M569 P3 S0                                     ; physical drive 3 goes backwards
-M584 X0 Y1 Z2 E3                               ; set drive mapping
+M569 P4 S0                                     ; physical drive 4 goes backwards
+
+; Dual Z Drivers, Compensation mode
+M584 X0 Y1 Z2:4 E3							   ; Two Z motors connected to driver outputs Z and E1
+M671 X-62:358 Y0:0 S9                        ; leadscrews at Left (connected to Z) and right (connected to E1) of X axis
+
 M350 X16 Y16 Z16 E16 I1                        ; configure microstepping with interpolation
 M92 X200.00 Y200.00 Z800.00 E415.00            ; Set steps per mm.  Initially E405.18 or 413-415, Ballscrew 200*16/4 = 800 (200 steps, 
 M566 X600 Y600 Z24 E300    					   ; set maximum instantaneous speed changes (mm/min)
