@@ -10,7 +10,7 @@ This project attempt to version the DUET 2 wifi config files for this project, a
 ![alt text](https://instagram.faep8-1.fna.fbcdn.net/v/t51.2885-15/e35/82275737_167851857797657_7645829098442912829_n.jpg?_nc_ht=instagram.faep8-1.fna.fbcdn.net&_nc_cat=105&_nc_ohc=AyyRwikUIyIAX8-z1CX&oh=cf19556ed0eab57d8b1e369aa22d8d73&oe=5EB68941 "Blv Mgn Cube")
 
 * Z Axis: 
-Designed for 3 axis, using the DuetX5. At this time, installed only 2 Axis.
+Designed for 3 axis, using the DuetX5. At this time, installed only 2 Axis on differents motors/drivers (Z, & E1)
 
 * BallScrews: 
 There are installed 1204 standard ballscrews. That would be 12mm rod, with 4mm pitch.
